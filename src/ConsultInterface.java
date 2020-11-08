@@ -1,31 +1,18 @@
-
 public interface ConsultInterface {
-    public void Paediatrician();
-    public void Neurologist();
-    public void Gynaecologist();
-    public void Dentist();
+    void Paediatrician();
+    void Neurologist();
 
 }
 
 class Consultation implements ConsultInterface {
 
-    @Override
     public void Paediatrician() {
-
+        System.out.println("The Paediatrician is in Room 21, kindly wait till you're asked to go in.");
     }
 
-    @Override
     public void Neurologist() {
-
+        System.out.println("The Neurologist is in Room 14, kindly wait till you're asked to go in.");
     }
 
-    @Override
-    public void Gynaecologist() {
 
-    }
-
-    @Override
-    public void Dentist() {
-
-    }
 }
